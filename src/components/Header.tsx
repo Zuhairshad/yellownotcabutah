@@ -46,6 +46,8 @@ export default function Header() {
           <button
             type="button"
             aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            aria-controls="site-menu"
             onClick={() => setMenuOpen(true)}
             className="flex h-10 w-10 flex-col items-center justify-center gap-1.5"
           >
@@ -57,6 +59,7 @@ export default function Header() {
       </header>
 
       <div
+        id="site-menu"
         className={`fixed inset-0 z-[60] flex flex-col items-center justify-center bg-gold/95 transition-opacity duration-300 ${
           menuOpen
             ? "pointer-events-auto opacity-100"
