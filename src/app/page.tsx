@@ -5,6 +5,7 @@ import AdaServices from "@/components/sections/AdaServices";
 import RatesTable from "@/components/sections/RatesTable";
 import ZoneCharge from "@/components/sections/ZoneCharge";
 import Destinations from "@/components/sections/Destinations";
+import Hiring from "@/components/sections/Hiring";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <RatesTable />
       <ZoneCharge />
       <Destinations />
+      <Hiring />
     </main>
   );
 }
