@@ -3,16 +3,28 @@
 import { useEffect, useState } from "react";
 
 export default function BackToTop() {
-  const [visible, setVisible] = useState(false);
+  const [pastThreshold, setPastThreshold] = useState(false);
+  const [overFooter, setOverFooter] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 400);
+    const onScroll = () => setPastThreshold(window.scrollY > 400);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (!visible) return null;
+  useEffect(() => {
+    const copyright = document.getElementById("site-copyright");
+    if (!copyright) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setOverFooter(entry.isIntersecting),
+      { rootMargin: "0px" }
+    );
+    observer.observe(copyright);
+    return () => observer.disconnect();
+  }, []);
+
+  if (!pastThreshold || overFooter) return null;
 
   return (
     <button

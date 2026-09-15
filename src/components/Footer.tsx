@@ -51,7 +51,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 bg-black/20 py-6 text-center text-sm text-white/60">
+      <div
+        id="site-copyright"
+        className="border-t border-white/10 bg-black/20 py-6 text-center text-sm text-white/60"
+      >
         © 2025. Yellow Cab Utah &amp; Hallooou. All rights reserved.
       </div>
     </footer>
