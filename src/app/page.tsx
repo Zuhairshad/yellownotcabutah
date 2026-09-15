@@ -6,6 +6,8 @@ import RatesTable from "@/components/sections/RatesTable";
 import ZoneCharge from "@/components/sections/ZoneCharge";
 import Destinations from "@/components/sections/Destinations";
 import Hiring from "@/components/sections/Hiring";
+import ValueComparison from "@/components/sections/ValueComparison";
+import TaxiIndustry from "@/components/sections/TaxiIndustry";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <ZoneCharge />
       <Destinations />
       <Hiring />
+      <ValueComparison />
+      <TaxiIndustry />
     </main>
   );
 }
