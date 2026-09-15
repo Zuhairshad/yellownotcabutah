@@ -11,23 +11,31 @@ import TaxiIndustry from "@/components/sections/TaxiIndustry";
 import DiscountCoupons from "@/components/sections/DiscountCoupons";
 import TownCar from "@/components/sections/TownCar";
 import AllWaysToRide from "@/components/sections/AllWaysToRide";
+import FavoritePlaces from "@/components/sections/FavoritePlaces";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
-    <main className="flex-1">
-      <Header />
-      <Hero />
-      <AirportServices />
-      <AdaServices />
-      <RatesTable />
-      <ZoneCharge />
-      <Destinations />
-      <Hiring />
-      <ValueComparison />
-      <TaxiIndustry />
-      <DiscountCoupons />
-      <TownCar />
-      <AllWaysToRide />
-    </main>
+    <>
+      <main className="flex-1">
+        <Header />
+        <Hero />
+        <AirportServices />
+        <AdaServices />
+        <RatesTable />
+        <ZoneCharge />
+        <Destinations />
+        <Hiring />
+        <ValueComparison />
+        <TaxiIndustry />
+        <DiscountCoupons />
+        <TownCar />
+        <AllWaysToRide />
+        <FavoritePlaces />
+      </main>
+      <Footer />
+      <BackToTop />
+    </>
   );
 }
