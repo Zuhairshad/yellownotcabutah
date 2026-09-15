@@ -19,9 +19,9 @@ export default function ValueComparison() {
           Cabs for transportation is far superior.
         </p>
 
-        <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-sm bg-black shadow-md">
-          <div className="absolute left-4 top-4 flex items-center gap-2 text-white">
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20 text-xs font-bold">
+        <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-sm border border-gold/30 bg-gradient-to-br from-charcoal to-navy shadow-lg">
+          <div className="absolute inset-x-0 top-0 flex items-center gap-2 bg-gradient-to-b from-black/60 to-transparent px-4 py-3 text-white">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gold text-xs font-bold text-navy">
               CBS
             </span>
             <span className="text-sm font-semibold">
@@ -31,9 +31,9 @@ export default function ValueComparison() {
           <button
             type="button"
             aria-label="Play video"
-            className="absolute inset-0 flex items-center justify-center"
+            className="group absolute inset-0 flex items-center justify-center"
           >
-            <span className="flex h-16 w-24 items-center justify-center rounded-lg bg-red-600">
+            <span className="flex h-16 w-24 items-center justify-center rounded-lg bg-red-600 shadow-lg ring-2 ring-gold/0 transition-all duration-200 group-hover:scale-105 group-hover:ring-gold/70">
               <span className="ml-1 h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-white" />
             </span>
           </button>
