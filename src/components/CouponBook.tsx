@@ -1,9 +1,9 @@
 export default function CouponBook() {
   return (
     <div className="relative mx-auto h-48 w-60 sm:h-56 sm:w-72">
-      <div className="absolute inset-0 rotate-6 rounded-md bg-navy shadow-xl" />
+      <div className="absolute inset-0 rotate-6 rounded-sm bg-navy shadow-xl" />
 
-      <div className="absolute inset-0 -rotate-3 overflow-hidden rounded-md border-2 border-dashed border-gold/70 bg-gradient-to-br from-navy-light to-navy shadow-xl">
+      <div className="absolute inset-0 -rotate-3 overflow-hidden rounded-sm border-2 border-dashed border-gold/70 bg-gradient-to-br from-navy-light to-navy shadow-xl">
         <span className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-navy-light" />
         <span className="absolute left-1/2 bottom-0 h-4 w-4 -translate-x-1/2 translate-y-1/2 rounded-full bg-navy-light" />
 
