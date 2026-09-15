@@ -18,7 +18,7 @@ export default function Hiring() {
             designed for driver success, and we help every step of the way.
           </p>
           <a
-            href="#"
+            href="#!"
             className="mt-4 inline-block font-semibold text-gold-link hover:underline"
           >
             Driver Application
@@ -44,13 +44,13 @@ export default function Hiring() {
             and include your resume.
           </p>
           <div className="mt-4 flex flex-col gap-1">
-            <a href="#" className="font-semibold text-gold-link hover:underline">
+            <a href="#!" className="font-semibold text-gold-link hover:underline">
               Equal Opportunity Policy
             </a>
-            <a href="#" className="font-semibold text-gold-link hover:underline">
+            <a href="#!" className="font-semibold text-gold-link hover:underline">
               Title VI and ADA Policy
             </a>
-            <a href="#" className="font-semibold text-gold-link hover:underline">
+            <a href="#!" className="font-semibold text-gold-link hover:underline">
               Discrimination Form
             </a>
           </div>

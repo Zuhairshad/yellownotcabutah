@@ -22,7 +22,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="#"
+          href="#!"
           aria-label="Ride Portal"
           className="mt-6 flex h-16 w-16 items-center justify-center rounded-full border-2 border-gold text-lg font-semibold text-gold"
         >

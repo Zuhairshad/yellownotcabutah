@@ -31,7 +31,7 @@ export default function DiscountCoupons() {
           <p className="mt-4 text-white/70">
             These discount coupon books can get you a 15% discount on
             regular metered rates. Buy{" "}
-            <a href="#" className="font-semibold text-gold hover:underline">
+            <a href="#!" className="font-semibold text-gold hover:underline">
               online
             </a>{" "}
             and save!

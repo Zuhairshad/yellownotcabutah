@@ -17,7 +17,7 @@ export default function TaxiIndustry() {
             <p className="text-xl italic text-gold">
               We can compete with Uber and Lyft!
             </p>
-            <a href="#" className="mt-2 inline-block text-sm text-white/50 hover:text-white">
+            <a href="#!" className="mt-2 inline-block text-sm text-white/50 hover:text-white">
               Read more!
             </a>
           </blockquote>
