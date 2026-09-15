@@ -19,7 +19,7 @@ export default function DiscountCoupons() {
   return (
     <section
       id="coupons"
-      className="bg-navy-light bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.06),transparent_60%)] py-20 text-white"
+      className="scroll-mt-24 bg-navy-light bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.06),transparent_60%)] py-20 text-white"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2">
         <CouponBook />

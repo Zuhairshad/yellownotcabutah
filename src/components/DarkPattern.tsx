@@ -13,7 +13,7 @@ export default function DarkPattern({
   return (
     <section
       id={id}
-      className={`relative overflow-hidden bg-navy text-white ${className}`}
+      className={`relative scroll-mt-24 overflow-hidden bg-navy text-white ${className}`}
       style={{ backgroundImage: `url("${TRIANGLE_BG}")` }}
     >
       {children}

@@ -1,6 +1,6 @@
 export default function ValueComparison() {
   return (
-    <section id="in-the-news" className="border-t border-black/5 bg-white py-20">
+    <section id="in-the-news" className="scroll-mt-24 border-t border-black/5 bg-white py-20">
       <div className="mx-auto max-w-4xl px-6">
         <h2 className="text-2xl font-bold text-gold-deep sm:text-3xl">
           Best Value? Taxi&apos;s Take On Uber and Lyft.

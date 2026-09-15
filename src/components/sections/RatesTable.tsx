@@ -33,7 +33,7 @@ const columns = [
 
 export default function RatesTable() {
   return (
-    <section id="rates" className="border-t border-black/5 bg-offwhite py-20">
+    <section id="rates" className="scroll-mt-24 border-t border-black/5 bg-offwhite py-20">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-2xl font-bold text-gold-deep sm:text-3xl">
           Yellow Cab Meter Rates

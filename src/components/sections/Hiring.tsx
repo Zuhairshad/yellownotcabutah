@@ -1,6 +1,6 @@
 export default function Hiring() {
   return (
-    <section id="opportunities" className="border-t border-black/5 bg-white py-20">
+    <section id="opportunities" className="scroll-mt-24 border-t border-black/5 bg-white py-20">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2">
         <div>
           <h2 className="text-2xl font-bold text-gold-deep sm:text-3xl">
