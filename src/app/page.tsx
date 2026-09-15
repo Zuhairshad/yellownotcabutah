@@ -8,6 +8,7 @@ import Destinations from "@/components/sections/Destinations";
 import Hiring from "@/components/sections/Hiring";
 import ValueComparison from "@/components/sections/ValueComparison";
 import TaxiIndustry from "@/components/sections/TaxiIndustry";
+import DiscountCoupons from "@/components/sections/DiscountCoupons";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Hiring />
       <ValueComparison />
       <TaxiIndustry />
+      <DiscountCoupons />
     </main>
   );
 }
