@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import AirportServices from "@/components/sections/AirportServices";
 import AdaServices from "@/components/sections/AdaServices";
 import RatesTable from "@/components/sections/RatesTable";
+import ZoneCharge from "@/components/sections/ZoneCharge";
+import Destinations from "@/components/sections/Destinations";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <AirportServices />
       <AdaServices />
       <RatesTable />
+      <ZoneCharge />
+      <Destinations />
     </main>
   );
 }
