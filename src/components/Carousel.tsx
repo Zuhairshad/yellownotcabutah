@@ -19,11 +19,11 @@ export default function Carousel({
 
   useEffect(() => {
     if (images.length < 2) return;
-    const id = setInterval(() => {
+    const id = setTimeout(() => {
       setIndex((prev) => (prev + 1) % images.length);
     }, intervalMs);
-    return () => clearInterval(id);
-  }, [images.length, intervalMs]);
+    return () => clearTimeout(id);
+  }, [index, images.length, intervalMs]);
 
   return (
     <div>
