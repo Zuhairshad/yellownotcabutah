@@ -10,6 +10,7 @@ import ValueComparison from "@/components/sections/ValueComparison";
 import TaxiIndustry from "@/components/sections/TaxiIndustry";
 import DiscountCoupons from "@/components/sections/DiscountCoupons";
 import TownCar from "@/components/sections/TownCar";
+import AllWaysToRide from "@/components/sections/AllWaysToRide";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <TaxiIndustry />
       <DiscountCoupons />
       <TownCar />
+      <AllWaysToRide />
     </main>
   );
 }
