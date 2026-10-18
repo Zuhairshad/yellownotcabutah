@@ -50,7 +50,7 @@ const ways = [
     title: "Reservations online",
     body: (
       <>
-        We have you covered there too. On line reservation booking is what
+        We have you covered there too. Online reservation booking is what
         we do best. After completing our{" "}
         <span className="text-gold">reservation form</span> you will
         receive a convenient email receipt for you to double check your
@@ -69,7 +69,10 @@ const ways = [
     body: (
       <>
         We have Customer Service Coordinators standing by 24/7. You can{" "}
-        <span className="text-gold">call us</span> anytime and relax,
+        <a href="tel:+18015212100" className="text-gold hover:underline">
+          call us
+        </a>{" "}
+        anytime and relax,
         knowing our high tech operations center will get you where you
         need to go efficiently and safely. Call anytime.
       </>
@@ -86,7 +89,7 @@ export default function AllWaysToRide() {
             All the ways Yellow moves you...
           </h2>
           <p className="mt-3 text-white/70">
-            No matter when how or why you&apos;re going - Yellow Cab Utah
+            No matter when, how, or why you&apos;re going - Yellow Cab Utah
             has you covered.
           </p>
         </div>

@@ -1,6 +1,7 @@
 export default function Hero() {
   return (
     <section
+      id="page-top"
       className="relative flex min-h-screen items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: "url(/images/hero-poster.jpg)" }}
     >
@@ -15,7 +16,7 @@ export default function Hero() {
         </p>
 
         <a
-          href="tel:801-521-2100"
+          href="tel:+18015212100"
           className="mt-8 rounded-full bg-gold px-10 py-4 text-xl font-bold text-charcoal shadow-lg transition-transform hover:scale-105"
         >
           801-521-2100

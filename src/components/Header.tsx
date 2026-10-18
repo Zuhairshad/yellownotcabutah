@@ -18,15 +18,20 @@ export default function Header() {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
+    if (!menuOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
     return () => {
       document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
     };
   }, [menuOpen]);
 
   return (
     <>
       <header
-        id="page-top"
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
           scrolled ? "bg-gold/95 shadow-md" : "bg-transparent"
         }`}
@@ -39,13 +44,13 @@ export default function Header() {
               width={160}
               height={80}
               className="h-14 w-auto object-contain"
-              priority
+              preload
             />
           </Link>
 
           <button
             type="button"
-            aria-label="Toggle menu"
+            aria-label="Open menu"
             aria-expanded={menuOpen}
             aria-controls="site-menu"
             onClick={() => setMenuOpen(true)}
@@ -60,6 +65,7 @@ export default function Header() {
 
       <div
         id="site-menu"
+        inert={!menuOpen}
         className={`fixed inset-0 z-[60] flex flex-col items-center justify-center bg-gold/95 transition-opacity duration-300 ${
           menuOpen
             ? "pointer-events-auto opacity-100"

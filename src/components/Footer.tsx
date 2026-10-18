@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FacebookIcon, GooglePlusIcon, YelpIcon } from "@/components/social-icons";
+import { FacebookIcon, YelpIcon } from "@/components/social-icons";
 
 export default function Footer() {
   return (
@@ -20,9 +20,24 @@ export default function Footer() {
         </p>
 
         <ul className="mt-4 space-y-1 text-white/80">
-          <li>Email: contact@yellowcabutah.com</li>
-          <li>Dispatch: 801-521-2100</li>
-          <li>Headquarters: 801-521-1856</li>
+          <li>
+            Email:{" "}
+            <a href="mailto:contact@yellowcabutah.com" className="hover:text-gold">
+              contact@yellowcabutah.com
+            </a>
+          </li>
+          <li>
+            Dispatch:{" "}
+            <a href="tel:+18015212100" className="hover:text-gold">
+              801-521-2100
+            </a>
+          </li>
+          <li>
+            Headquarters:{" "}
+            <a href="tel:+18015211856" className="hover:text-gold">
+              801-521-1856
+            </a>
+          </li>
           <li>Fax: 801-521-1857</li>
         </ul>
 
@@ -41,13 +56,6 @@ export default function Footer() {
           >
             <YelpIcon className="h-6 w-6" />
           </a>
-          <a
-            href="https://plus.google.com/u/0/112508693970224164283"
-            aria-label="Google Plus"
-            className="flex h-12 w-12 items-center justify-center rounded bg-gold text-charcoal hover:opacity-90"
-          >
-            <GooglePlusIcon className="h-6 w-6" />
-          </a>
         </div>
       </div>
 
@@ -55,7 +63,7 @@ export default function Footer() {
         id="site-copyright"
         className="border-t border-white/10 bg-black/20 py-6 text-center text-sm text-white/60"
       >
-        © 2025. Yellow Cab Utah &amp; Hallooou. All rights reserved.
+        © {new Date().getFullYear()}. Yellow Cab Utah &amp; Hallooou. All rights reserved.
       </div>
     </footer>
   );

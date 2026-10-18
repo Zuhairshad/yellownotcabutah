@@ -28,15 +28,11 @@ export default function ValueComparison() {
               Which Are More Affordable -- Ride-Shares Or Yellow Cabs?
             </span>
           </div>
-          <button
-            type="button"
-            aria-label="Play video"
-            className="group absolute inset-0 flex items-center justify-center"
-          >
-            <span className="flex h-16 w-24 items-center justify-center rounded-lg bg-red-600 shadow-lg ring-2 ring-gold/0 transition-all duration-200 group-hover:scale-105 group-hover:ring-gold/70">
+          <div aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
+            <span className="flex h-16 w-24 items-center justify-center rounded-lg bg-red-600 shadow-lg">
               <span className="ml-1 h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-white" />
             </span>
-          </button>
+          </div>
         </div>
 
         <p className="mt-10 text-2xl font-bold text-gold-deep">

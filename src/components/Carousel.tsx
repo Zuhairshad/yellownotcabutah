@@ -60,7 +60,6 @@ export default function Carousel({
             className={`object-cover transition-opacity duration-700 ${
               i === index ? "opacity-100" : "opacity-0"
             }`}
-            priority={i === 0}
           />
         ))}
 
